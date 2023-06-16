@@ -1,0 +1,17 @@
+server:
+  port: 9192
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: order-service
+
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
+logging:
+  file:
+    name: /Users/sunjingsong/learning-center/javatechie/log/microservice.log
